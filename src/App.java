@@ -23,6 +23,18 @@ public class App {
 
         System.out.println("Ingrese los valores del arreglo: ");
 
+        for(int i = 0; i < tamanio; i++){
+            System.out.println("Ingrese los valores en la posición: " + i);
+            int numero = scanner.nextInt();
+            arreglo[i] = numero;
+        }
+        System.out.print("[");
+        for(int j = 0; j< tamanio; j++){
+            System.out.print(" " + arreglo[j]);
+        }
+        System.out.print(" ]");
+        
+        
         scanner.close();
     }
 }
