@@ -11,9 +11,11 @@ public class App {
             //Validar cada elemento del arreglo
             arreglo[i] = leerEnteroValido(scanner, "Elemento" + (i + 1) + ":", true);
         }
+        System.out.print("[");
         for(int i : arreglo){
-            System.out.print(i);
+            System.out.print(" " + i);
         }
+        System.out.println(" ]");
         scanner.close();
     }
     public static int leerEnteroValido(Scanner scanner, String mensaje, boolean numerosNegativos){
